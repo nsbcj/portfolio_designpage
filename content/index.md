@@ -10,4 +10,4 @@ Webbplatsen är en del av kursen design på BTH. Kursen är del i ett kurspaket 
 
 ![Bild kunde inte laddas](image/avatar_256x256.png)
 
-Inledningsvis känns det som att kursen innehåller flera nya inslag, bland annat Git och Markdown. Det tog en stund att komma igång och jag hade vissa problem med att ladda bilden och loggan. Fokuset har inledningsvis legat på att få allt att fungera.
+Inledningsvis känns det som att kursen innehåller flera nya inslag, bland annat Git och Markdown. Det tog en stund att komma igång och jag hade vissa problem med att ladda bilden och loggan. Fokus har legat på att försöka förstå verktygen och att få sidan att fungera. För att testa hur allt fungerade har jag gjort några ändringar i stylen och jag hoppas kunna göra ytterligare framöver.
