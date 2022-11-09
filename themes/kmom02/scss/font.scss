@@ -32,13 +32,17 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     }
 }
 
-h1,
+h1 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 h2,
 h3,
 h4,
 h5 {
-    margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h5,
