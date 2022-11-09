@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-fourth-color;
+
+    img {
+        padding: 1rem;
+    }
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+
+    * {
+        color: $font-color;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        img {
+            max-width: 150px;
+        }
+    }
+}

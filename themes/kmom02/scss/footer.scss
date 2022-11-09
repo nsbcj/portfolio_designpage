@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-alternative-color;
+
+    * {
+        color: $font-color;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .social {
+        display: flex;
+        gap: 1rem;
+    }
+}
