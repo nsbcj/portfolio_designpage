@@ -36,10 +36,10 @@
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
     'title title title'
-    'item-1 item-2 item-2'
-    'item-3 item-3 item-4'
-    'item-5 item-5 item-5'
-    'item-6 item-7 item-7';
+    'item-1 item-3 item-3'
+    'item-4 item-4 item-5'
+    'item-6 item-6 item-6'
+    'item-2 item-7 item-7';
     grid-gap: 1rem;
 }
 
