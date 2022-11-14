@@ -6562,15 +6562,17 @@ body .footer {
   background-color: #365173;
   min-height: 65vh;
 }
-.main h1,
-.main h2,
-.main h3,
-.main h4,
-.main h5,
-.main p,
+.main * {
+  margin: 0;
+}
+.main h1:not(.grid h1),
+.main h2:not(.grid h2),
+.main h3:not(.grid h3),
+.main h4:not(.grid h4),
+.main h5:not(.grid h5),
+.main p:not(.grid p),
 .main li {
   max-width: 60rem;
-  margin: 0;
 }
 
 .main-aside {
@@ -6664,6 +6666,21 @@ body .footer {
   grid-area: item-7;
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  border: 1px solid #1b1b19;
+  min-width: 50%;
+  margin-bottom: 1.5625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+table td {
+  font-weight: 400;
+}
+
 @media (max-width: 767px) {
   .grid {
     grid-template-columns: auto;
@@ -6751,21 +6768,6 @@ body .footer {
 .footer .social {
   display: flex;
   gap: 1rem;
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 1rem;
-  text-align: left;
-  font-size: 1rem;
-  border: 1px solid #1b1b19;
-  min-width: 50%;
-  margin-bottom: 1.5625rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-table td {
-  font-weight: 400;
 }
 
 blockquote {

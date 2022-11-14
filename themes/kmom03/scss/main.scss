@@ -2,17 +2,19 @@
     background-color: $background-color;
     min-height: 65vh;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p,
-    li {
-        max-width: 60rem;
+    * {
         margin: 0;
     }
 
+    h1:not(.grid h1),
+    h2:not(.grid h2),
+    h3:not(.grid h3),
+    h4:not(.grid h4),
+    h5:not(.grid h5),
+    p:not(.grid p),
+    li {
+        max-width: 60rem;
+    }
 }
 
 .main-aside {
