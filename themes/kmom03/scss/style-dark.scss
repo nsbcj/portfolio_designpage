@@ -1,0 +1,21 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'dark-theme-variables';
+@import 'mixins';
+@import 'font';
+@import 'layout';
+@import 'header';
+@import 'main';
+@import 'aside';
+@import 'footer';
+@import 'blockquotes';
+@import 'code';
+
+img {
+    filter: brightness(0.8) contrast(1.2) grayscale(0.5);
+}
+
+code,
+pre {
+    background-color: $background-alternative-color;
+    color: $font-alternative-color;
+}

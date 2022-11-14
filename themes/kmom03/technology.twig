@@ -1,0 +1,28 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+    <div class="main flex">
+        <div class="aside flex flex-column" role="aside">
+            <ul class="aside-list">
+                {% for page in pages("technologies/sub") if not page.hidden %}
+                <li class="aside-list-item">
+                    <a href="{{ page.url }}">
+                        <div class="flex aside-list-text">
+                            <i class="{{ page.meta.icon }} fa-2x " aria-hidden="true"></i>
+                            <span>{{ page.title }}</span>
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="main-aside" role="main">
+            {{ content }}
+        </div>
+    </div>
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

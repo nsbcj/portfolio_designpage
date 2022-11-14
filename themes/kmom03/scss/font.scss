@@ -1,0 +1,106 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../shared/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Poor Story';
+    src: url('../../shared/fonts/Poor_Story/PoorStory-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../../shared/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+* {
+    color: $font-alternative-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    p,
+    li {
+        @include padding-bottomed(1.25rem);
+        font-size: 1.25rem;
+    }
+}
+
+.aside {
+    li {
+        padding-bottom: 0;
+        font-size: 1.25rem;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h5,
+h4 {
+    @include padding-bottomed(1.563rem);
+    font-size: 1.563rem;
+}
+
+h3 {
+    @include padding-bottomed(1.953rem);
+    font-size: 1.953rem;
+    font-weight: normal;
+}
+
+h2 {
+    @include padding-bottomed(2.441rem);
+    font-size: 2.441rem;
+}
+
+h1 {
+    @include padding-bottomed(5.96rem);
+    font-size: 5.96rem;
+}
+
+@media (max-width: 767px) {
+    .main {
+        p,
+        li {
+            @include padding-bottomed(1rem);
+            font-size: 1rem;
+        }
+    }
+
+    h5,
+    h4 {
+        @include padding-bottomed(1.25rem);
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        @include padding-bottomed(1.563rem);
+        font-size: 1.563rem;
+    }
+
+    h2 {
+        @include padding-bottomed(1.953rem);
+        font-size: 1.953rem;
+    }
+
+    h1 {
+        @include padding-bottomed(2.441rem);
+        font-size: 2.441rem;
+    }
+}

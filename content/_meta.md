@@ -8,4 +8,10 @@ Social:
     - title: Länk till dbwebb.
       url: https://www.dbwebb.se
       icon: fas fa-leaf fa-2x
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon fa-2x
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt fa-2x
 ---

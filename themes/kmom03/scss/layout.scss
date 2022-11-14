@@ -1,0 +1,21 @@
+body {
+    .header,
+    .main,
+    .footer {
+        padding: 1rem $padding;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        .header,
+        .main,
+        .footer {
+            padding: 1rem;
+        }
+
+        .main-aside {
+            padding: 0;
+        }
+    }
+}

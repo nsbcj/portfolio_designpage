@@ -1,0 +1,5 @@
+// border margin-bottom
+@mixin padding-bottomed($fontSize) {
+    padding-bottom: calc($fontSize * 1.4);
+    line-height: calc($fontSize * 1.4);
+}
