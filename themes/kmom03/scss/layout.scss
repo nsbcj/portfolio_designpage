@@ -6,6 +6,13 @@ body {
     }
 }
 
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
 @media (max-width: 767px) {
     body {
         .header,

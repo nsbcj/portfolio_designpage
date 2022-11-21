@@ -2,7 +2,7 @@
     background-color: $background-color;
     min-height: 65vh;
 
-    * {
+    *:not(img):not(table) {
         margin: 0;
     }
 
@@ -29,6 +29,7 @@
 
 .grid {
     display: grid;
+    grid-gap: 1rem;
 }
 
 .grid-tech {
@@ -40,7 +41,6 @@
     'item-4 item-4 item-5'
     'item-6 item-6 item-6'
     'item-2 item-7 item-7';
-    grid-gap: 1rem;
 }
 
 .grid-analysis {
@@ -49,7 +49,13 @@
     grid-template-areas:
     'title title title'
     'item-1 item-2 item-3';
-    grid-gap: 1rem;
+}
+
+.grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas: 'item-1 item-2 item-3';
+    padding-bottom: 1rem;
 }
 
 .main-card {
@@ -88,14 +94,18 @@
     grid-area: title;
 }
 
+
+picture:nth-of-type(1),
 .main-card:nth-of-type(1) {
     grid-area: item-1;
 }
 
+picture:nth-of-type(2),
 .main-card:nth-of-type(2) {
     grid-area: item-2;
 }
 
+picture:nth-of-type(3),
 .main-card:nth-of-type(3) {
     grid-area: item-3;
 }
@@ -123,12 +133,37 @@ table {
     font-size: 1rem;
     border: 1px solid $font-alternative-color;
     min-width: 50%;
-    margin-bottom: calc(1.25 * $ratio);
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: calc(1.4 * $ratio);
 
     td {
         font-weight: 400;
+        max-width: 60rem;
+        line-height: 1.4rem;
+    }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+picture {
+    img {
+        display: block;
+        margin: auto;
     }
 }
 
