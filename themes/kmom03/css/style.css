@@ -6455,10 +6455,7 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
 }
 
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -6468,6 +6465,7 @@ h4 {
   padding-bottom: 2.1882rem;
   line-height: 2.1882rem;
   font-size: 1.563rem;
+  text-transform: capitalize;
 }
 
 h3 {
