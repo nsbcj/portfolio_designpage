@@ -1,5 +1,5 @@
 ---
-Logo: image/world_256x256.png
+Logo: image/world_256x256.png&f=colorize,90,136,191,0&q=40
 Tagline: My portfolio.
 Social:
     - title: Link till mitt github repo.

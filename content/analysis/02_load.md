@@ -30,13 +30,9 @@ Metod
 Precis som i föregående analys, kan metoden liknas vid en förenklad fallstudie. Webbplatserna analyseras i följande steg.
 
 1. Webbplatserna mäts i verktyget PageSpeed Insights för både mobile- och desktop-versionerna. De betyg som verktygen genererar noteras i ett kalkylark.
-
 2. Laddningstid och antal resurser mäts i dev-tools. Mätvärdet utgörs av ett snittvärde av tre mätningar. Mätvärdet noteras i kalkylarket. De värde som skrivits in baseras på antalet requester, mängden nedladdad data samt värdet "load" i nätverksfliken. Anledningen till att "load" valts som riktvärde, är att vissa webbplatser upplevdes fortsätta ladda innehåll även efter att hela sidans innehåll visats på webbplatsen.
-
 3. En mening skrivs om vilken förbättringspotential som finns på sidan.
-
 4. Resultaten sammanfattas i en analys där de vanligaste förbättringsåtgärderna noteras.
-
 5. Webbplatserna rangordnas utifrån de mätningar som gjorts.
 
 
@@ -58,7 +54,10 @@ Verktyget PageSpeed beskrivs mäta en rad parametrar kopplade till en webbplats 
 Resultat
 -----------------------
 *Förklaringar kopplat till förkortningar i kalkylbladet:*
+
 *FCP - First Contentful Paint, TTI - Time to Interactive, SI - Speed Index, TBT - Total Blocking Time, LCP - Largest Contentful Paint, CLS - Cumulative Layout Shift*
+
+*Resurser är mätta i antal, Tid i sekunder och storlek i mb*
 
 ###Kalkylblad
 
@@ -78,11 +77,33 @@ Analys
 -----------------------
 Det har varit intressant att använda verktyget PageSpeed i uppgiften. Det är också intressant att jämföra resultaten från PageSpeed med de mätvärden som hämtades från dev-tools. Moz-artikeln tar upp flera av de förbättringsmöjligheter som PageSpeed-mätningarna genererat. Att reducera mängden oanvänd Javascript i kombination med att minska andelen innehåll som blockerar sidans rendering, verkar vara de främsta förbättringsmöjligheterna avseende de tre sidor som ingår i mätningarna. Bildhanteringen förefaller, med undantag från Sketch, vara bra.
 
-Det som stack ut i prestandamätningarna var att Adobe fick förhållandevis låga poäng i mobil-versionen. Tittar man på resultatet så ser man att sidans laddningstider är långa avseende allt utom FCP (first contentful paint) och LCP (largest contentful paint). Siffrorna för Adobe är något bättre i desktop-versionen. Jämför man med Adobes resultat för laddade resurser ser man å andra sidan att sidan har bäst resultat avseende både antalet laddade resurser, laddningstid och storlek. Detta skulle möjligen kunna förklaras av hur mätningen är gjord och valet av värden som gjorts från dev-tools. Det är dock även en möjlighet att Adobes prestanda påverkas av att de har innehåll som blockerar sidans rendering. I sådant fall skulle borttagande av innehåll som blockerar sidans rendering möjligen ha positiv effekt på sidans prestandapoäng.
+Det som stack ut i prestandamätningarna var att Adobe fick förhållandevis låga poäng i mobil-versionen. Tittar man på resultatet så ser man att sidans laddningstider är långa avseende allt utom FCP (first contentful paint) och LCP (largest contentful paint). Siffrorna för Adobe är något bättre i desktop-versionen. Jämför man med Adobes resultat för laddade resurser ser man å andra sidan att webbplatsen har bäst resultat avseende både antalet laddade resurser, laddningstid och storlek. Detta skulle möjligen kunna förklaras av hur mätningen är gjord och valet av värden som gjorts från dev-tools. Det är dock även en möjlighet att Adobes prestanda påverkas av att de har innehåll som blockerar sidans rendering. I sådant fall skulle borttagande av innehåll som blockerar sidans rendering möjligen ha positiv effekt på sidans prestandapoäng.
+
+Figma, som har relativt höga poäng avseende både mobil- och desktop-prestanda, laddar å andra sidan många resurser och en stor mängd data. En avvikelse som noterats är att Figma vid den andra mätningen, endast laddade 6.3 mb i förhållande till det genomsnittliga 15.51 mb. Vid denna mätning laddades också ett färre antal resurser från webbplatsen.
+
+Sketch har en laddningstid som var mer en dubbelt så lång i förhållande till de andra två webbplatserna.
+
+###Rangordning baserat på mätvärde
+Den webbplats som har det övergripande bästa resultatet är Figma, som har den bästa mobila prestandan, den näst bästa desktop prestandan och den lägsta laddningstiden. Dock laddar sidan mest data, vilket möjligtvis drar ner det övergripande betyget något.
+
+ De låga poängen Adobe erhöll på PageSpeed bedöms motivera att Sketch har en generellt bättre prestanda. Det bör dock nämnas att Adobe laddar minst antal resurser, minst data och har en snabb laddningstid. Adobe är enligt undersökningen bättre än Sketch på dessa tre punkter. Sketch har dock bättre poäng avseende både mobil- och desktop prestanda, varvid det anses utgöra grund för att Sketch kommer strax före Adobe.
+
+ |   Webbplats          |    Plats       |
+ |   ---------          |     -----      |
+ |   www.figma.com      |    1  |   
+ |   www.sketch.com     |    2  |  
+ |   www.adobe.com      |    3  |
+
+###Avseende laddningstider
+Känslan är att man bör understiga fyra-fem sekunders laddningstid. Som det beskrivs i en av artiklarna, *“Google Developers: Why Performance Matters”* (Pavix, Anstey, Wagner 2019 uppdaterad 2020), påverkar laddningstiden intresset för sidan. Att fort se relevant innehåll kanske till och med överväger intresset att mötas av en god design. En annan sak som påverkar helhetsintrycket är de rutor som dyker upp efter laddningen. I vissa fall kan det uppfatts som negativt att det efter fem sekunder kommer upp en ruta, likt på Adobes webbplats.
+
+Trots att Sketch överskrider gränsen ovan är känslan att sidan laddar ganska snabbt. Kanske beror det på att det viktigaste innehållet laddas snabbt. Både Figma och Adobe, ger en känsla av att laddningen går tillräckligt fort.
 
 Referenser
 -----------------------
-LePage, Pete. 2014 (uppdaterad 2020). *https://web.dev/responsive-images/*. Läst 2022-11-18.
+LePage, Pete. 2014 (uppdaterad 2020). *Responsive images*; https://web.dev/responsive-images/. Läst 2022-11-18.
+
+Pavic, Bojan; Anstey, Chris; Wagner, Jeremy; 2019 (uppdaterad 2020). *“Google Developers: Why Performance Matters”*. https://web.dev/why-speed-matters/. Läst 2022-11-21.
 
 *https://moz.com/learn/seo/page-speed*. Läst 2022-11-18.
 

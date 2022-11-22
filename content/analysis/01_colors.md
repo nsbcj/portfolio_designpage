@@ -17,23 +17,23 @@ Urval
 
 Urvalet är baserat på webbplatser relaterade till design. Webbplatserna innehåller bland annat verktyg som underlättar designprocesser.
 
-Anledningen till att design-plattformars webbplatser har valts, är att deras egen produkt rör design. Att företagen  arbetar med design, borde på något sätt återspeglas på webbplatserna.
+Anledningen till att design-plattformars webbplatser valts, är att deras produkt rör design. Att företagen arbetar med design, bör återspeglas i valet av design på webbplatserna.
 
 Följande är en sammanställning av urvalet:
 
-|   Webbplats          |    Kontrolldatum       |
-|   ---------          |     -----      |
-|   www.figma.com      |    2022-11-11  |   
-|   www.adobe.com      |    2022-11-11  |
-|   www.sketch.com     |    2022-11-11  |
+|   Webbplats          |    Bild    |    Kontrolldatum       |
+|   ---------          |    ----    |     -----      |
+|   www.figma.com      | ![Bild kunde inte laddas](../image/figma.png?h=100&save-as=jpg&q=40)  |   2022-11-11  |   
+|   www.adobe.com      | ![Bild kunde inte laddas](../image/adobe.png?h=100&save-as=jpg&q=40)  |   2022-11-11  |
+|   www.sketch.com     | ![Bild kunde inte laddas](../image/sketch.png?h=100&save-as=jpg&q=40)  |   2022-11-11  |
 
 Metod
 -----------------------
 
-Undersökningen har gjorts enligt den kravspecifikation är angiven kopplad till uppgiften. Nedan redogörs för genomförda steg.
+Undersökningen har gjorts enligt kravspecifikation kopplad till uppgiften. Nedan redogörs för genomförda steg.
 
 1. Kontroll av webbplats.
-Bilder från webbplatsen har tagits genom användande av screenshots, med hjälp av det screenshotprogram som medföljer operativsystemet. Avgränsning har gjort till sidornas övre del, det vill säga det som syns på på sidan utan att någon scrollning genomförts.
+Bilder från webbplatserna har tagits med hjälp av det screenshotprogram som medföljer operativsystemet. Avgränsning har gjort till sidornas övre del, det vill säga det som syns på på sidan utan att någon scrollning genomförts.
 2. Framtagande av färgpalett.
 Från bilden i steg 1, har färgpalett extraherats med hjälp av Adobe Colors verktyg [Image](https://color.adobe.com/create/image). Efter att bild laddats upp i verktyget extraheras en färgpalett.
 3. Noterande av färgschema och accentfärg.
@@ -41,15 +41,15 @@ Efter att färgkoderna noterats i hexadecimal, har färgkoderna kontrollerats i 
 4. Noterande av typsnitt.
 Typsnittet har noterats med hjälp av dev-tools i webbläsaren. Den information som hämtats avseende typsnitten är det som framgår av informationen "font used". Specifik information om typsnitt i h1-h3 samt brödtext har hämtats genom filtrering av element i html-strukturen.
 5. Notering av stil kopplad till webbplatsens syfte.
-Denna del har gjorts med hjälp av referenser till kursmaterial som ingått i kursmomentet.
+Denna del har gjorts med hjälp av referenser till kursmaterial som ingår i kursmomentet.
 
 Sammanfattningsvis är rapporten en förenklad fallstudie av tre webbplatser. Resultatet presenteras i tabellformat, medan diskussionen utgörs av en argumentation kopplad till webbplatsernas syfte, likheter och olikheter.
 
 Material
 -----------------------
-I artikeln *"An Introduction to Color Theory for Web Design"* (Cannon 2012) beskrivs kortfattat om färgens betydelse inom web-design. Cannon beskriver tre delar som är av betydelse avseende färger inom design. Det är hur färger kompletterar varandra, dess kontrast och dess livfullhet.
+I artikeln *"An Introduction to Color Theory for Web Design"* (Cannon 2012) beskrivs kortfattat färgens betydelse inom web-design. Cannon beskriver tre delar som är av betydelse avseende färger inom design. Det är hur färger kompletterar varandra, dess kontrast och dess livfullhet.
 
-I boken *"The Principles of Beautiful Web Design"* (Beaird, George, 2014) beskrivs bland annant vad olika färger kan representera och hur färgscheman är uppbyggda.
+I boken *"The Principles of Beautiful Web Design"* (Beaird, George, 2014) beskrivs bland annat vad olika färger kan representera och hur färgscheman är uppbyggda.
 
 ###Mättnad och kontrast
 Beaird och George (2014) beskriver att färgens mättnad kan beskrivas som färgen styrka eller klarhet. Livliga färger sticker ut mer än färger som går mot grått eller svart.
@@ -63,8 +63,8 @@ Beaird och George (2014) beskriver i figur 2.31 att komplementfärg eller split-
 ###Sammansatt färgschema
 Cannon (2010) beskriver att ett sammansatt (compound) färgschema består av två färger valda från motsatt sida av färghjulet.
 
-###Färg temperatur
-Beaird och George (2014) beskriver att varma färger är spektrumet från rött till gult. Färgerna representerar värma och rörelse. En annan egenskap författarna nämner är att varma färger sticker ut i kombination med kalla.
+###Färgtemperatur
+Beaird och George (2014) beskriver att varma färger är spektrumet från rött till gult. Färgerna representerar värme och rörelse. En annan egenskap författarna nämner är att varma färger sticker ut i kombination med kalla.
 
 Vidare skriver författarna att kalla färger är spektrumet från grönt till blått. Dessa färger är enligt författarna lugnande och kan med fördel användas på stora element på webbplatser.   
 
@@ -75,10 +75,9 @@ Både vitt och svart är också färger som nämns. Vit används ofta som bakgru
 
 Resultat
 -----------------------
-
 ###www.figma.com
 
-####Färgpalett
+1. ####Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
     <tr>
         <td style="height: 50px; width: 50px; background-color: #5058F2"></td>
@@ -89,7 +88,7 @@ Resultat
     </tr>
 </table>
 
-####Undersökning
+2. ####Undersökning
 |   Område              | Resultat |
 |   -------             |  -----   |
 |   Val av färgschema   | Split complementary / Komplementfärg   |
@@ -101,7 +100,7 @@ Resultat
 
 ###www.adobe.com
 
-####Färgpalett
+1. ####Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
     <tr>
         <td style="height: 50px; width: 50px; background-color: #F21D81"></td>
@@ -112,7 +111,7 @@ Resultat
     </tr>
 </table>
 
-####Undersökning
+2. ####Undersökning
 |   Område              | Resultat |
 |   -------             |  -----   |
 |   Val av färgschema   | Compound / Sammansatt    |
@@ -124,7 +123,7 @@ Resultat
 
 ###www.sketch.com
 
-####Färgpalett
+1. ####Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
     <tr>
         <td style="height: 50px; width: 50px; background-color: #F27F3D"></td>
@@ -133,7 +132,7 @@ Resultat
     </tr>
 </table>
 
-####Undersökning
+2. ####Undersökning
 |   Område              | Resultat |
 |   -------             |  -----   |
 |   Val av färgschema   | Analogous / Analogt    |
@@ -145,10 +144,7 @@ Resultat
 
 Analys
 -----------------------
-
-Trots användande av de verktyg Adobe erbjuder relaterade till analys av färgschema, har det inte varit enkelt att avgöra vilka färgschema som respektive webbplats hör under.
-
-Det är en webbplats som sticker ut avseende färgvalet och det är www.sketch.com. Webbplatsen har ett färgschema som jag tror är analogt, men angränsande till monokromt. De andra webbplatserna har färgscheman som liknar varandra avseende att de använder komplementfärger. Min uppfattning är att Figma och Adobe signalerar att de arbetar med produkter som relateras till kreativitet. Sketch färgval relateras inte omedelbart till kreativitet utan snarare till en känsla av struktur.
+En webbplats som sticker ut avseende färgvalet, vilket är www.sketch.com. Webbplatsen har ett färgschema som jag tror är analogt, men angränsar till monokromt. De andra webbplatserna har färgscheman som liknar varandra avseende att de använder komplementfärger. Min uppfattning är att Figma och Adobe signalerar att de arbetar med produkter som relateras till kreativitet. Sketch färgval relateras inte omedelbart till kreativitet utan snarare till en känsla av struktur.
 
 Både Figma och Adobe kombinerar varma och kalla färger på ett intressant sätt. Beaird och George (2014) skriver att kalla färger representerar lugn och varma rörelse. De skriver också att de kalla färgerna med fördel kan användas till större element på webbplatser. Figmas webbplats är bra utformad ur detta hänseende. De kalla färgerna dominerar, samtidigt som en varm färg har valts som accent för att ringa in sidans budskap. Adobe har i sina containers använt någon form av mesh / gradients innehållande både kalla och varma färger. Kombinationen förmedlar känslan av kreativitet. Jag tror att Adobe använder färgen rött för att förmedla glädje. Beaird och George (2014) skriver att färgen lila är sällsynt i webbdesign, men jag uppfattar att färgen har en viktig roll på både Figma och Adobes webbplatser. Författarna har vidare beskrivit att svart kan användas för att uttrycka makt och styrka. Min känsla är att de som utformat Sketch webbplats har givit svart en viktig roll på webbplatsen. Den svart färgen används effektivt för att förstärka de viktiga element som visas på sidan. Den brun / orangea färgen som används på de stora elementen på Sketch webbplats, känns lite överväldigande. Kanske är det att färgen känns varm, som förstärker känslan.
 
@@ -163,6 +159,8 @@ Beaird, Jason; George, James. 2014. *The Principles of Beautiful Web Design, 3rd
 
 Övrigt
 -----------------------
+Det uppfattades inte helt att avgöra vilka färgschema som respektive webbplats hör under, trots användandet av Adobes verktyg.
+
 Sammanfattningsvis har det varit en intressant utmaning att analysera webbplatserna. De tre webbplatserna uppfattas ha en god design med sammanhängande färgval och typografi. Sketch förmedlar sin profil på ett annorlunda sätt en de två övriga, men uppfattas även den ha en god design.
 
 Författare: anjc20
