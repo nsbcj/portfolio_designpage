@@ -1,8 +1,10 @@
 body {
+    background-color: $background-color;
+
     .header,
     .main,
     .footer {
-        padding: 1rem $padding;
+        padding: calc(1rem + 40px) $padding;
     }
 }
 
@@ -18,7 +20,7 @@ video {
         .header,
         .main,
         .footer {
-            padding: 1rem;
+            padding: calc(1rem + 40px);
         }
 
         .main-aside {

@@ -1,8 +1,8 @@
 .main {
-    background-color: $background-color;
+    background: repeating-linear-gradient(0deg, rgba(#1e2d40, 0.05), rgba(#1e2d40, 0.05) 2.5px, rgba(#365173, 0.05) 2.5px, rgba(#365173, 0.05) 12.5px);
     min-height: 65vh;
 
-    *:not(img):not(table) {
+    *:not(img):not(table):not(.aside-list-item) {
         margin: 0;
     }
 
@@ -59,6 +59,7 @@
 }
 
 .main-card {
+    position: relative;
     width: 100%;
     text-decoration: none;
     background-color: $background-third-color;
@@ -70,9 +71,17 @@
     }
 }
 
+.main-card > p > i {
+    transition: 0.5s;
+}
+
 .main-card:hover > p > i {
     opacity: 0.9;
     transform: scale(1.1);
+}
+
+.main-card:hover .main-card-title::after {
+    clip-path: polygon(20% 100%, 0 0, 100% 0);
 }
 
 .main-card:active {
@@ -80,12 +89,26 @@
 }
 
 .main-card-title {
-    display: grid;
+    display: block;
     width: 100%;
     padding-block: 1rem;
-    place-items: center;
+    text-align: center;
     background-color: $background-fourth-color;
     color: $font-third-color;
+    position: relative;
+}
+
+.main-card-title::after {
+    content: '';
+    z-index: 1;
+    background-color: $background-fourth-color;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    clip-path: polygon(80% 100%, 0 0, 100% 0);
+    transition: 0.5s;
 }
 
 .grid > h1 {

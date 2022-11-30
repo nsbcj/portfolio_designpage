@@ -1,11 +1,24 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: $background-fourth-color;
+    background: $background-fourth-color;
+    position: relative;
 
-    img {
+    .logo {
         padding: 1rem;
+        width: 150px;
     }
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: $background-fourth-color;
+    clip-path: polygon(100% 0, 100% 0%, 80% 100%, 0 0%, 0 0);
 }
 
 .site-header {
@@ -16,6 +29,10 @@
 
     * {
         color: $font-color;
+    }
+
+    h1 {
+        padding-bottom: 0;
     }
 }
 
