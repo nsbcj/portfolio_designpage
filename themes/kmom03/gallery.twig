@@ -9,9 +9,9 @@
             {% for image in pages["gallery"].meta.image %}
                 <a href="{{ base_url }}/image/{{ image.url }}" title={{ image.title }} target=_blank>
                     <picture>
-                        <source media="(min-width: 1780px)" srcset="{{ base_url }}/image/{{ image.url }}?w=387&crop-to-fit&aspect-ratio=16:9&q=40" width=387 height=218>
-                        <source media="(min-width: 800px)" srcset="{{ base_url }}/image/{{ image.url }}?w=200&crop-to-fit&aspect-ratio=16:9&q=40" width=200 height=113>
-                        <img src="{{ base_url }}/image/{{ image.url }}?w=400&crop-to-fit&aspect-ratio=!16:10&q=50" alt="{{ image.title }}" width=400 height=640>
+                        <source media="(min-width: 1780px)" srcset="{{ base_url }}/image/{{ image.url }}?w=387&crop-to-fit&aspect-ratio=16:9&q=40">
+                        <source media="(min-width: 800px)" srcset="{{ base_url }}/image/{{ image.url }}?w=200&crop-to-fit&aspect-ratio=16:9&q=40">
+                        <img src="{{ base_url }}/image/{{ image.url }}?w=400&crop-to-fit&aspect-ratio=!16:10&q=50" alt="{{ image.title }}">
                     </picture>
                 </a>
             {% endfor %}
