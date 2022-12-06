@@ -9,7 +9,7 @@
             <h1>Teknologier</h1>
             {% for page in pages("technology/sub") if not page.hidden %}
             <a class="main-card" href="{{ page.id }}">
-                <h4 class="main-card-title">{{ page.title }}</h4>
+                <p class="main-card-title">{{ page.title }}</p>
                 <p>
                     <i class="{{ page.meta.icon }} fa-3x " aria-hidden="true"></i>
                 </p>

@@ -6670,6 +6670,7 @@ body .footer {
   background-color: #3c434d;
   color: #949491;
   position: relative;
+  font-weight: bold;
 }
 
 .main-card-title::after {
