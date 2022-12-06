@@ -6525,7 +6525,7 @@ body .footer {
   padding: calc(1rem + 40px) 16.6666666667%;
 }
 
-img,
+img:not(nav img),
 embed,
 object,
 video {
@@ -6607,6 +6607,12 @@ body .footer {
   margin: auto;
   display: block;
   border-radius: 50%;
+  width: 256px;
+  height: 256px;
+}
+
+.logo {
+  min-width: fit-content;
 }
 
 .grid {
@@ -6627,7 +6633,7 @@ body .footer {
 }
 
 .grid-gallery {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-template-rows: repeat(auto);
   grid-template-areas: "item-1 item-2 item-3";
   padding-bottom: 1rem;
