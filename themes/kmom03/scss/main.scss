@@ -154,8 +154,9 @@ table {
     border-spacing: 1rem;
     text-align: left;
     font-size: 1rem;
-    border: 1px solid $font-alternative-color;
+    border: 1px solid $font-color;
     min-width: 50%;
+    max-width: 60rem;
     margin-bottom: calc(1.4 * $ratio);
 
     td {

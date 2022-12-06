@@ -6536,7 +6536,7 @@ video {
   body .header,
 body .main,
 body .footer {
-    padding: calc(1rem + 40px);
+    padding: calc(1rem + 40px) 1rem;
   }
   body .main-aside {
     padding: 0;
@@ -6727,8 +6727,9 @@ table {
   border-spacing: 1rem;
   text-align: left;
   font-size: 1rem;
-  border: 1px solid #1b1b19;
+  border: 1px solid #fefef1;
   min-width: 50%;
+  max-width: 60rem;
   margin-bottom: 1.75rem;
 }
 table td {
